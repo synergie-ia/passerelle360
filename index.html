@@ -11,7 +11,6 @@
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
       background: white;
@@ -19,48 +18,43 @@
       display: flex;
       flex-direction: column;
     }
-
     /* En-tête */
     .hero {
       background: transparent;
-      color: #2d3748;
+      color: #0052A3;
       padding: 40px 20px 20px 20px;
       text-align: center;
       position: relative;
     }
-
-    /* Titre en NOIR */
+    /* Titre en BLEU FONCÉ */
     .hero h1 {
       font-size: 2em;
       font-weight: 700;
       margin-bottom: 10px;
       margin-top: 20px;
-      color: #2d3748;
+      color: #0052A3;
     }
-
-    /* Sous-titre en NOIR */
+    /* Sous-titre en BLEU FONCÉ */
     .subtitle {
       font-size: 1.15em;
       font-weight: 400;
-      color: #4a5568;
+      color: #0052A3;
     }
-
-    /* Container - 2 colonnes avec plus d'espace */
+    /* Container - 2 colonnes PLUS GRANDES */
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 60px 20px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 40px;
+      gap: 50px;
       flex: 1;
     }
-
-    /* Cartes principales */
+    /* Cartes principales - PLUS GRANDES */
     .card {
       background: white;
       border-radius: 20px;
-      padding: 40px 20px;
+      padding: 60px 30px;
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
       transition: all 0.3s ease;
@@ -71,52 +65,44 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 200px;
+      min-height: 280px;
       position: relative;
     }
-
     .card:hover {
       transform: translateY(-8px);
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     }
-
     /* Icônes principales - TRÈS GRANDES */
     .card-icon {
-      font-size: 4em;
-      margin-bottom: 20px;
+      font-size: 5em;
+      margin-bottom: 25px;
     }
-
     /* Polices AGRANDIES */
     .card-title {
-      font-size: 1.2em;
+      font-size: 1.4em;
       font-weight: 600;
       line-height: 1.2;
       color: white;
     }
-
-    /* COULEURS de la capture d'écran */
+    /* DÉGRADÉS BLEUS */
     .card-orientation {
-      background: #41B6E6;
+      background: linear-gradient(135deg, #41B6E6 0%, #0072C6 100%);
     }
-
     .card-transition {
-      background: #0072C6;
+      background: linear-gradient(135deg, #0072C6 0%, #0052A3 100%);
     }
-
-    /* Footer */
+    /* Footer en BLEU FONCÉ */
     .footer {
       background: transparent;
-      color: #718096;
+      color: #0052A3;
       padding: 25px 20px;
       text-align: center;
       margin-top: 40px;
     }
-
     .footer p {
       margin: 0;
       font-size: 0.95em;
     }
-
     /* Responsive */
     @media (max-width: 768px) {
       .hero h1 {
@@ -135,19 +121,18 @@
       }
       
       .card {
-        min-height: 170px;
-        padding: 30px 15px;
+        min-height: 200px;
+        padding: 40px 20px;
       }
       
       .card-icon {
-        font-size: 3.5em;
+        font-size: 4em;
       }
       
       .card-title {
-        font-size: 1.1em;
+        font-size: 1.2em;
       }
     }
-
     /* Accessibilité */
     .card:focus {
       outline: 3px solid #41B6E6;
@@ -160,19 +145,16 @@
     <h1>Bienvenue sur Passerelle 360</h1>
     <p class="subtitle">L'intelligence artificielle au service de l'orientation scolaire et de la transition professionnelle</p>
   </div>
-
   <div class="container">
     <a href="https://synergie-ia.github.io/passerelle-orientation/" class="card card-orientation">
       <div class="card-icon">🎓</div>
       <div class="card-title">Orientation scolaire</div>
     </a>
-
     <a href="https://synergie-ia.github.io/passerelle-transition/" class="card card-transition">
       <div class="card-icon">💼</div>
       <div class="card-title">Transition professionnelle</div>
     </a>
   </div>
-
   <div class="footer">
     <p>Copyright Synergie IA</p>
   </div>
