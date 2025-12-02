@@ -18,43 +18,50 @@
       display: flex;
       flex-direction: column;
     }
+    
     /* En-tête */
     .hero {
       background: transparent;
       color: #0052A3;
-      padding: 40px 20px 20px 20px;
+      padding: 30px 20px 15px 20px;
       text-align: center;
       position: relative;
     }
+    
     /* Titre en BLEU FONCÉ */
     .hero h1 {
-      font-size: 2em;
+      font-size: 1.75em;
       font-weight: 700;
-      margin-bottom: 10px;
-      margin-top: 20px;
+      margin-bottom: 8px;
+      margin-top: 15px;
       color: #0052A3;
+      line-height: 1.3;
     }
+    
     /* Sous-titre en BLEU FONCÉ */
     .subtitle {
-      font-size: 1.15em;
+      font-size: 1em;
       font-weight: 400;
       color: #0052A3;
+      line-height: 1.4;
     }
-    /* Container - 2 colonnes PLUS GRANDES */
+    
+    /* Container - 2 colonnes plus compactes */
     .container {
-      max-width: 1000px;
+      max-width: 900px;
       margin: 0 auto;
-      padding: 60px 20px;
+      padding: 40px 20px;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 50px;
+      gap: 30px;
       flex: 1;
     }
-    /* Cartes principales - PLUS GRANDES */
+    
+    /* Cartes principales - PLUS PETITES et homogènes */
     .card {
       background: white;
-      border-radius: 20px;
-      padding: 60px 30px;
+      border-radius: 16px;
+      padding: 35px 25px;
       text-align: center;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
       transition: all 0.3s ease;
@@ -65,78 +72,89 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 280px;
+      min-height: 220px;
       position: relative;
     }
+    
     .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
     }
-    /* Images principales - TRÈS GRANDES */
+    
+    /* Images principales - PLUS PETITES */
     .card-image {
-      width: 140px;
-      height: 140px;
+      width: 90px;
+      height: 90px;
       object-fit: contain;
-      margin-bottom: 25px;
-      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+      margin-bottom: 18px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
     }
-    /* Polices AGRANDIES */
+    
+    /* Titre des cartes - PLUS PETIT */
     .card-title {
-      font-size: 1.4em;
+      font-size: 1.1em;
       font-weight: 600;
-      line-height: 1.2;
+      line-height: 1.3;
       color: white;
+      max-width: 280px;
     }
+    
     /* DÉGRADÉS BLEUS */
     .card-orientation {
       background: linear-gradient(135deg, #41B6E6 0%, #0072C6 100%);
     }
+    
     .card-transition {
       background: linear-gradient(135deg, #0072C6 0%, #0052A3 100%);
     }
+    
     /* Footer en BLEU FONCÉ */
     .footer {
       background: transparent;
       color: #0052A3;
-      padding: 25px 20px;
+      padding: 20px 20px;
       text-align: center;
-      margin-top: 40px;
+      margin-top: 30px;
+      font-size: 0.9em;
     }
+    
     .footer p {
       margin: 0;
-      font-size: 0.95em;
     }
+    
     /* Responsive */
     @media (max-width: 768px) {
       .hero h1 {
-        font-size: 1.6em;
-        margin-top: 15px;
+        font-size: 1.4em;
+        margin-top: 10px;
       }
       
       .subtitle {
-        font-size: 1em;
+        font-size: 0.95em;
       }
       
       .container {
         grid-template-columns: 1fr;
-        padding: 30px 15px;
-        gap: 25px;
+        padding: 25px 15px;
+        gap: 20px;
       }
       
       .card {
-        min-height: 200px;
-        padding: 40px 20px;
+        min-height: 180px;
+        padding: 30px 20px;
       }
       
       .card-image {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
       }
       
       .card-title {
-        font-size: 1.2em;
+        font-size: 1em;
       }
     }
+    
     /* Accessibilité */
     .card:focus {
       outline: 3px solid #41B6E6;
@@ -160,7 +178,7 @@
     </a>
   </div>
   <div class="footer">
-    <p>Copyright Synergie IA--Ecti</p>
+    <p>© 2025 Synergie IA--Ecti</p>
   </div>
 </body>
 </html>
