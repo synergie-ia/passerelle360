@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pass360 - Synergie IA</title>
   <style>
-    :root {
+   :root {
       --primary: #41B6E6;
       --primary-dark: #0072C6;
       --secondary: #0052A3;
@@ -29,7 +29,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 40px 20px;
+      padding: 15px 20px;
       color: var(--text-dark);
     }
     
@@ -41,19 +41,19 @@
     /* En-tête */
     .hero {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 25px;
     }
     
     .hero-title {
-      font-size: 1.75em;
+      font-size: 1.6em;
       font-weight: 700;
       color: var(--secondary);
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       line-height: 1.3;
     }
     
     .hero-subtitle {
-      font-size: 1em;
+      font-size: 0.95em;
       font-weight: 600;
       color: var(--secondary);
       line-height: 1.5;
@@ -65,15 +65,15 @@
     .cards-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
-      margin-bottom: 40px;
+      gap: 20px;
+      margin-bottom: 25px;
     }
     
-    /* Cartes */
+    /* Cartes - TAILLE RÉDUITE */
     .card {
       background: white;
       border-radius: var(--radius-lg);
-      padding: 40px 25px;
+      padding: 18px 12px;
       text-align: center;
       cursor: pointer;
       transition: all 0.3s ease;
@@ -82,7 +82,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 240px;
+      min-height: 145px;
     }
     
     .card:hover {
@@ -90,30 +90,29 @@
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
     }
     
-    .card-orientation {
-      background: linear-gradient(135deg, #41B6E6 0%, #0072C6 100%);
-      color: white;
-    }
-    
-    .card-transition {
-      background: linear-gradient(135deg, #0072C6 0%, #0052A3 100%);
-      color: white;
-    }
-    
-    /* Images dans les cartes */
+   .card-orientation {
+  background: linear-gradient(135deg, #41B6E6 0%, #0072C6 100%);
+  color: white;
+}
+
+.card-transition {
+  background: linear-gradient(135deg, #0072C6 0%, #0052A3 100%);
+  color: white;
+}
+    /* Images dans les cartes - GARDÉES À 80px */
     .card-image {
-      width: 120px;
-      height: 120px;
+      width: 80px;
+      height: 80px;
       object-fit: contain;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     }
     
-    /* Titre des cartes */
+    /* Titre des cartes - TAILLE RÉDUITE */
     .card-title {
-      font-size: 1.5em;
+      font-size: 0.95em;
       font-weight: 700;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       line-height: 1.3;
     }
     
@@ -125,42 +124,42 @@
     .footer {
       text-align: center;
       color: var(--secondary);
-      font-size: 0.9em;
-      margin-top: 30px;
+      font-size: 0.85em;
+      margin-top: 15px;
       font-weight: 500;
     }
     
     /* Responsive */
     @media (max-width: 768px) {
       body {
-        padding: 30px 15px;
+        padding: 15px 10px;
       }
       
       .hero-title {
-        font-size: 1.5em;
+        font-size: 1.3em;
       }
       
       .hero-subtitle {
-        font-size: 0.95em;
+        font-size: 0.9em;
       }
       
       .cards-grid {
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 18px;
       }
       
       .card {
-        padding: 35px 20px;
-        min-height: 200px;
+        padding: 15px 10px;
+        min-height: 130px;
       }
       
       .card-image {
-        width: 110px;
-        height: 110px;
+        width: 70px;
+        height: 70px;
       }
       
       .card-title {
-        font-size: 1.3em;
+        font-size: 0.9em;
       }
     }
   </style>
